@@ -1,0 +1,12 @@
+@import "variables";
+
+.usage-section {
+  background: $greenBackgroundColor;
+  color: white;
+
+  ul {
+    li {
+      margin-bottom: 20px;
+    }
+  }
+}

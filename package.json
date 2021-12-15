@@ -1,0 +1,7 @@
+{
+  "name": "cannaline",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "sass --watch styles/styles.scss public/styles.css"
+  }
+}

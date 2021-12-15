@@ -1,0 +1,12 @@
+@import "variables";
+
+.welcome-section {
+  padding: 16px;
+  background-color: $greenBackgroundColor;
+  color: white;
+
+
+  .order-button {
+    padding: 19px 59px;
+  }
+}

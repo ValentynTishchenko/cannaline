@@ -1,0 +1,87 @@
+.list li {
+  margin-bottom: 40px;
+}
+
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section-title {
+  font-size: 43px;
+}
+
+.section {
+  padding: 16px;
+}
+
+.order-link {
+  display: inline-block;
+  background: #FF7956;
+  color: white;
+  border-radius: 10px;
+  padding: 19px 59px;
+  border: none;
+}
+
+.welcome-section {
+  padding: 16px;
+  background-color: #406440;
+  color: white;
+}
+.welcome-section .order-button {
+  padding: 19px 59px;
+}
+
+.about-section {
+  color: #222726;
+}
+
+.advantages-section {
+  color: white;
+  text-align: center;
+  background: #406440;
+}
+.advantages-section ul li h3 {
+  font-weight: 600;
+}
+
+.influence-section ul li {
+  margin-bottom: 40px;
+}
+
+.usage-section {
+  background: #406440;
+  color: white;
+}
+.usage-section ul li {
+  margin-bottom: 20px;
+}
+
+.recommendations-section ul li {
+  padding: 54px 24px;
+  background: #F7FBF4;
+  margin-bottom: 20px;
+}
+
+.product-description-section {
+  background: #406440;
+  color: white;
+}
+
+.price-section ul li {
+  width: 340px;
+  border: 1px solid rgba(192, 196, 206, 0.5);
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */

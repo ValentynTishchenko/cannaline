@@ -1,0 +1,11 @@
+$item-background: #F7FBF4;
+
+.recommendations-section {
+  ul {
+    li {
+      padding: 54px 24px;
+      background: $item-background;
+      margin-bottom: 20px;
+    }
+  }
+}
