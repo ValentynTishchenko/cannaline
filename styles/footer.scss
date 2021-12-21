@@ -32,6 +32,10 @@
   }
 
   .warning {
+    font-size: 12px;
+    line-height: 22.5px;
+    font-weight: 500;
+    color: $greyColor;
     padding: 0 16px;
     margin: 35px 0 36px;
     text-align: center;
@@ -39,6 +43,7 @@
   }
 
   .copyright {
+    color: $greyColor;
     border-top: 1px solid #7F8195;
     text-align: center;
     line-height: 21px;
@@ -46,6 +51,7 @@
   }
 
   .home-button {
+    font-family: Circe, sans-serif;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;

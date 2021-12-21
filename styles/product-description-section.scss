@@ -1,5 +1,5 @@
-@import "../variables";
-@import "../mixins";
+@import "variables";
+@import "mixins";
 
 
 .product-description-section {
@@ -11,14 +11,16 @@
   .product-description-section-background {
     height: 414px;
     width: 100%;
-    background: url("../assets/unsplash_r19PtSh4m7A.png");
+    background: url("../assets/unsplash_r19PtSh4m7A.png") no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
   }
 
   .section-title {
     margin-top: 87px;
   }
 
-  @include has-test-shining{
+  @include has-test-shining {
     background-size: 80%;
     top: -30px;
     right: -45px;

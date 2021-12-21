@@ -1,5 +1,5 @@
-@import "../variables";
-@import "../mixins";
+@import "variables";
+@import "mixins";
 
 
 .feedback-section {
@@ -9,14 +9,14 @@
 
   @include has-test-shining {
     top: -40px;
-    right: -25px;
+    right: -30px;
     background-size: 80%;
   }
 
   @include has-text-underline {
     left: -20px;
     bottom: -25px;
-    background-size: 80%;
+    background-size: 70%;
   }
 
   .section-text {
@@ -49,6 +49,7 @@
     }
 
     input[type='button'] {
+      font-weight: 600;
       margin: 40px auto 72px;
       width: 260px;
       color: white;

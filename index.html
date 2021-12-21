@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cannaline</title>
-    <link rel="stylesheet" href="build/styles.css"/>
+    <link rel="stylesheet" href="styles/styles.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
           integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -55,10 +55,8 @@
     </section>
     <section class="section advantages-section">
         <h2 class="section-title">
-            <i class="has-text-underline">
-                <i class="has-text-shining">
-                    Переваги
-                </i>
+            <i class="has-text-shining has-text-underline">
+                Переваги
             </i>
             <br/> Конопляної Олії
         </h2>
@@ -89,6 +87,7 @@
     <section class="section influence-section">
         <div class="section-icon"></div>
         <h2 class="section-title">
+            <div class="rounded-circle"></div>
             <i class="has-text-underline">Канабіноїди</i><br/> та їх вплив
         </h2>
         <p class="description">
@@ -109,7 +108,9 @@
         </ol>
     </section>
     <section class="section usage-section">
-        <h2 class="section-title"><i class="has-text-shining has-text-underline">Використовують</i></h2>
+        <h2 class="section-title has-text-shining has-text-underline">
+            Використовують
+        </h2>
         <ul>
             <li>Для <b>зменшення болю</b>, пов’язаного з такими захворюваннями як розсіяний склероз та ревматоїдний
                 артрит.
@@ -284,8 +285,9 @@
     </section>
     <section class="section feedback-section">
         <div class="section-icon"></div>
-        <h2 class="section-title">Форма <i class="has-text-shining">зворотнього</i><br/> <i class="has-text-underline">зв’язку</i></h2>
-        <p class="section-text">Замовити можна, залишивши заявку на сайті, або забрати у точці видачі.</p>
+        <h2 class="section-title">Форма <i class="has-text-shining">зворотнього</i><br/> <i class="has-text-underline">зв’язку</i>
+        </h2>
+        <p class="section-text">Замовити можна, залишивши заявку на сайті, або забрати у <a class="link" href="#footer">точці видачі</a>.</p>
         <form id="feedback-form" class="feedback-form" action="">
             <label for="tel">Номер телефону</label>
             <input id="tel" type="text">
@@ -316,7 +318,7 @@
         </div>
     </section>
 </main>
-<footer class="footer">
+<footer id="footer" class="footer">
     <div class="footer-actions">
         <img class="logo-icon" alt="logo" src="assets/green-logo.svg">
         <img alt="inst link" src="assets/insta.svg">

@@ -1,5 +1,5 @@
-@import "../variables";
-@import "../mixins";
+@import "variables";
+@import "mixins";
 
 .usage-section {
   background: $greenColor;
@@ -9,17 +9,18 @@
     margin-top: 85px;
   }
 
-  @include has-text-underline {
-    bottom: -25px;
-  }
-;
-
   @include has-test-shining {
     background-size: 80%;
     top: -25px;
-    right: -40px;
+    right: -20px;
   }
-;
+
+  @include has-text-underline {
+    width: 280px;
+    height: 25px;
+    left: 30px;
+    background-size: 100%;
+  }
 
   ul {
     position: relative;
@@ -43,6 +44,7 @@
       max-width: 410px;
       margin: 85px auto;
       height: 260px;
+
 
       .usage-section-background-wrapper {
         position: absolute;
@@ -81,7 +83,7 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        right: 0;
+        left: -16px;
         background: url("../assets/usage-section/usage-section-last-bg.png") no-repeat right;
         background-size: 381px 274px;
       }

@@ -1,5 +1,5 @@
-@import "../variables";
-@import "../mixins";
+@import "variables";
+@import "mixins";
 
 
 .influence-section {
@@ -9,7 +9,18 @@
     margin: 90px 0 50px;
   }
 
+  .rounded-circle {
+    position: absolute;
+    background: $item-background;
+    border-radius: 50%;
+    top: -20px;
+    left: 20px;
+    width: 88px;
+    height: 88px;
+  }
+
   .section-title {
+    position: relative;
     color: black;
     text-align: center;
 

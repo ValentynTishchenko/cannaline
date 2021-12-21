@@ -18,6 +18,7 @@ ul li {
 }
 
 .order-link {
+  font-weight: 600;
   display: inline-block;
   background: #FF7956;
   color: white;
@@ -25,6 +26,10 @@ ul li {
   padding: 19px 59px;
   border: none;
   text-decoration: none;
+}
+
+.link {
+  color: #616B84;
 }
 
 .section {
@@ -121,6 +126,8 @@ ul li {
   font-size: 16px;
 }
 .welcome-section .order-link {
+  font-size: 16px;
+  font-weight: 600;
   margin-top: 55px;
 }
 .welcome-section .background-wrapper {
@@ -133,7 +140,7 @@ ul li {
   right: -30px;
   width: 100%;
   height: 100%;
-  background: url("../assets/welcome-section-background.svg") no-repeat;
+  background: url("../assets/welcome-section-background.svg") no-repeat right;
 }
 
 .has-text-shining {
@@ -233,7 +240,7 @@ ul li {
 }
 .advantages-section .has-text-underline:before {
   bottom: -20px;
-  width: 158px;
+  background-size: 80%;
 }
 .advantages-section .advantages-list {
   text-align: center;
@@ -287,7 +294,17 @@ ul li {
 .influence-section .section-icon {
   margin: 90px 0 50px;
 }
+.influence-section .rounded-circle {
+  position: absolute;
+  background: #F7FBF4;
+  border-radius: 50%;
+  top: -20px;
+  left: 20px;
+  width: 88px;
+  height: 88px;
+}
 .influence-section .section-title {
+  position: relative;
   color: black;
   text-align: center;
 }
@@ -360,14 +377,17 @@ ul li {
 .usage-section .section-title {
   margin-top: 85px;
 }
-.usage-section .has-text-underline:before {
-  bottom: -20px;
-  bottom: -25px;
-}
 .usage-section .has-text-shining:after {
   background-size: 80%;
   top: -25px;
-  right: -40px;
+  right: -20px;
+}
+.usage-section .has-text-underline:before {
+  bottom: -20px;
+  width: 280px;
+  height: 25px;
+  left: 30px;
+  background-size: 100%;
 }
 .usage-section ul {
   position: relative;
@@ -423,7 +443,7 @@ ul li {
   position: absolute;
   height: 100%;
   width: 100%;
-  right: 0;
+  left: -16px;
   background: url("../assets/usage-section/usage-section-last-bg.png") no-repeat right;
   background-size: 381px 274px;
 }
@@ -495,10 +515,11 @@ ul li {
   margin-top: 85px;
 }
 .recommendations-section .recommendations-list__item {
+  margin: 0 auto 20px;
+  max-width: 430px;
   border-radius: 10px;
   padding: 54px 24px;
   background: #F7FBF4;
-  margin-bottom: 20px;
 }
 .recommendations-section .recommendations-list__item h4, .recommendations-section .recommendations-list__item p {
   margin: 0;
@@ -543,7 +564,9 @@ ul li {
 .product-description-section .product-description-section-background {
   height: 414px;
   width: 100%;
-  background: url("../assets/unsplash_r19PtSh4m7A.png");
+  background: url("../assets/unsplash_r19PtSh4m7A.png") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 .product-description-section .section-title {
   margin-top: 87px;
@@ -617,10 +640,14 @@ ul li {
 .price-section .price-list__item-compound {
   font-weight: 600;
   line-height: 40px;
-  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
   color: #406440;
 }
 .price-section .price-list__item-compound span {
+  margin-right: 15px;
   line-height: 50px;
 }
 .price-section .price-list__item-compound img {
@@ -705,14 +732,14 @@ ul li {
 }
 .feedback-section .has-text-shining:after {
   top: -40px;
-  right: -25px;
+  right: -30px;
   background-size: 80%;
 }
 .feedback-section .has-text-underline:before {
   bottom: -20px;
   left: -20px;
   bottom: -25px;
-  background-size: 80%;
+  background-size: 70%;
 }
 .feedback-section .section-text {
   text-align: center;
@@ -739,6 +766,7 @@ ul li {
   height: 195px;
 }
 .feedback-section .feedback-form input[type=button] {
+  font-weight: 600;
   margin: 40px auto 72px;
   width: 260px;
   color: white;
@@ -802,7 +830,7 @@ ul li {
   margin-top: 40px;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 .instagram-section .insta-link-section img {
   height: 18px;
@@ -861,18 +889,24 @@ ul li {
   margin-bottom: 23px;
 }
 .footer .warning {
+  font-size: 12px;
+  line-height: 22.5px;
+  font-weight: 500;
+  color: #616B84;
   padding: 0 16px;
   margin: 35px 0 36px;
   text-align: center;
   text-transform: uppercase;
 }
 .footer .copyright {
+  color: #616B84;
   border-top: 1px solid #7F8195;
   text-align: center;
   line-height: 21px;
   padding: 29px 16px;
 }
 .footer .home-button {
+  font-family: Circe, sans-serif;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;

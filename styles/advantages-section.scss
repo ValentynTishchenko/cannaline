@@ -1,5 +1,5 @@
-@import "../variables";
-@import "../mixins";
+@import "variables";
+@import "mixins";
 
 
 .advantages-section {
@@ -14,7 +14,7 @@
   }
 
   @include has-text-underline {
-    width: 158px;
+    background-size: 80%;
   }
 
   .advantages-list {

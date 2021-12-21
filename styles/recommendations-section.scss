@@ -1,5 +1,5 @@
-@import "../variables";
-@import "../mixins";
+@import "variables";
+@import "mixins";
 
 
 .recommendations-section {
@@ -19,10 +19,11 @@
     margin-top: 85px;
 
     &__item {
+      margin: 0 auto 20px;
+      max-width: 430px;
       border-radius: 10px;
       padding: 54px 24px;
       background: $item-background;
-      margin-bottom: 20px;
 
       h4, p {
         margin: 0;

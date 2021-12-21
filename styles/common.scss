@@ -21,6 +21,7 @@ ul {
 }
 
 .order-link {
+  font-weight: 600;
   display: inline-block;
   background: $orderButtonColor;
   color: white;
@@ -28,4 +29,8 @@ ul {
   padding: 19px 59px;
   border: none;
   text-decoration: none;
+}
+
+.link {
+  color: $greyColor;
 }
