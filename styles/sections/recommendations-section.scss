@@ -1,0 +1,39 @@
+@import "../variables";
+@import "../mixins";
+
+
+.recommendations-section {
+  .section-icon {
+    margin: 110px 0 50px;
+  }
+
+  @include has-test-shining {
+    background-size: 80%;
+    top: -30px;
+    right: -45px;
+  }
+
+  @include has-text-underline();
+
+  .recommendations-list {
+    margin-top: 85px;
+
+    &__item {
+      border-radius: 10px;
+      padding: 54px 24px;
+      background: $item-background;
+      margin-bottom: 20px;
+
+      h4, p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 30px;
+        color: $greyTextColor;
+      }
+
+      h4 {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

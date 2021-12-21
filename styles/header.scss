@@ -1,0 +1,15 @@
+.header {
+  padding: 12px;
+  background: $greenColor;
+  border-bottom: 1px solid rgba(154, 172, 154, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .order-link {
+    padding: 9px 30px;
+    margin-right: 12px;
+  }
+
+
+}

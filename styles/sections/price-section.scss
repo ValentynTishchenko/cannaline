@@ -1,0 +1,86 @@
+@import "../variables";
+
+.price-section {
+  .section-icon {
+    margin: 56px 0 54px;
+  }
+
+  .has-text-underline:before {
+    left: -10px;
+    bottom: -20px;
+    background-size: 50%;
+  }
+
+  .green-leaf {
+    position: absolute;
+    width: 165px;
+    height: 205px;
+    left: -24px;
+    background: url("../../assets/green-leaf.png");
+  }
+
+  .price-list {
+    margin-top: 65px;
+
+    &__item {
+      margin: 20px auto;
+      width: 340px;
+      border: 1px solid rgba(192, 196, 206, 0.5);
+      box-sizing: border-box;
+      padding: 20px;
+      border-radius: 20px;
+      text-align: center;
+
+      .divider {
+        width: 288px;
+        margin: 0 auto;
+        border-bottom: 1px dashed rgba(192, 196, 206, 0.5);
+      }
+
+      &-compound {
+        font-weight: 600;
+        line-height: 40px;
+        text-align: right;
+        color: $greenColor;
+
+        span {
+          line-height: 50px;
+        }
+
+        img {
+          height: 20px;
+        }
+      }
+
+      &-image {
+        width: 230px;
+        height: 235px;
+      }
+
+      &-name {
+        font-size: 18px;
+      }
+
+      &-description {
+        line-height: 30px;
+        color: $greyColor;
+      }
+
+      &-price {
+        font-size: 20px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .price {
+          color: $greenColor;
+        }
+      }
+
+      .order-link {
+        margin-top: 24px;
+      }
+    }
+  }
+}

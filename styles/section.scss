@@ -1,0 +1,49 @@
+.section {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0 16px;
+}
+
+@mixin title {
+  font-family: Circe, sans-serif;
+  font-weight: 500;
+
+  i {
+    font-style: normal !important;
+  }
+}
+
+.section-main-title {
+  @include title;
+
+  font-size: 45px;
+  line-height: 66px;
+}
+
+.section-title {
+  @include title;
+
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 20px;
+}
+
+.section-icon {
+  width: 100%;
+  height: 55px;
+  background: url("../assets/section-icon.png") no-repeat center;
+  background-size: contain;
+}
+
+.section-text {
+  text-align: center;
+  color: $greyTextColor;
+}
+
+.section-link {
+  color: white;
+}

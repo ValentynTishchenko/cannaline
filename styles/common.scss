@@ -1,5 +1,11 @@
 @import "variables";
 
+body {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 30px;
+}
+
 .list {
   li {
     margin-bottom: 40px;
@@ -14,19 +20,6 @@ ul {
   }
 }
 
-p {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.section-title {
-  font-size: 43px;
-}
-
-.section {
-  padding: 16px;
-}
-
 .order-link {
   display: inline-block;
   background: $orderButtonColor;
@@ -34,4 +27,5 @@ p {
   border-radius: 10px;
   padding: 19px 59px;
   border: none;
+  text-decoration: none;
 }

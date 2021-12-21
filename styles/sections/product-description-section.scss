@@ -1,0 +1,58 @@
+@import "../variables";
+@import "../mixins";
+
+
+.product-description-section {
+  margin-top: 110px;
+  background: $greenColor;
+  padding-bottom: 100px;
+  color: white;
+
+  .product-description-section-background {
+    height: 414px;
+    width: 100%;
+    background: url("../../assets/unsplash_r19PtSh4m7A.png");
+  }
+
+  .section-title {
+    margin-top: 87px;
+  }
+
+  @include has-test-shining{
+    background-size: 80%;
+    top: -30px;
+    right: -45px;
+  }
+
+  @include has-text-underline();
+
+  .product-description-list {
+    margin-top: 67px;
+    padding: 0 16px;
+
+    &__item {
+      position: relative;
+      margin-top: 20px;
+      line-height: 30px;
+      padding-left: 40px;
+
+      &:before {
+        background: url("../../assets/check-circle-1.svg");
+        top: 3px;
+        left: 4px;
+        position: absolute;
+        display: inline-block;
+        content: '';
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .order-link {
+    margin-left: 16px;
+    margin-top: 50px;
+  }
+
+}
