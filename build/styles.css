@@ -74,19 +74,6 @@ ul li {
   color: white;
 }
 
-.header {
-  padding: 12px;
-  background: #406440;
-  border-bottom: 1px solid rgba(154, 172, 154, 0.3);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header .order-link {
-  padding: 9px 30px;
-  margin-right: 12px;
-}
-
 .has-text-shining {
   position: relative;
 }
@@ -146,7 +133,7 @@ ul li {
   right: -30px;
   width: 100%;
   height: 100%;
-  background: url("../../assets/welcome-section-background.svg") no-repeat;
+  background: url("../assets/welcome-section-background.svg") no-repeat;
 }
 
 .has-text-shining {
@@ -190,14 +177,14 @@ ul li {
   max-width: 410px;
   margin: 27px auto 0;
   height: 300px;
-  background: url("../../assets/common/blob.png") no-repeat center;
+  background: url("../assets/common/blob.png") no-repeat center;
 }
 .about-section-background-left {
   position: absolute;
   width: 240px;
   height: 200px;
   left: -30px;
-  background: url("../../assets/about-section/about-section-bg1.png") no-repeat;
+  background: url("../assets/about-section/about-section-bg1.png") no-repeat;
   background-size: 241px 200px;
 }
 .about-section-background-right {
@@ -206,7 +193,7 @@ ul li {
   bottom: 0;
   width: 229px;
   height: 190px;
-  background: url("../../assets/about-section/about-section-bg2.png") no-repeat;
+  background: url("../assets/about-section/about-section-bg2.png") no-repeat;
   background-size: 262px 189px;
 }
 
@@ -408,7 +395,7 @@ ul li {
   height: 100%;
   width: 241px;
   left: -25px;
-  background: url("../../assets/common/blob.svg") no-repeat left;
+  background: url("../assets/common/blob.svg") no-repeat left;
   background-size: 241px 247px;
 }
 .usage-section ul .background-wrapper-item .usage-section-background {
@@ -417,7 +404,7 @@ ul li {
   height: 100%;
   right: -30px;
   top: 40px;
-  background: url("../../assets/usage-section/usage-section-bg.png") no-repeat right;
+  background: url("../assets/usage-section/usage-section-bg.png") no-repeat right;
   background-size: 334px 247px;
 }
 .usage-section ul .background-wrapper-item:before {
@@ -437,7 +424,7 @@ ul li {
   height: 100%;
   width: 100%;
   right: 0;
-  background: url("../../assets/usage-section/usage-section-last-bg.png") no-repeat right;
+  background: url("../assets/usage-section/usage-section-last-bg.png") no-repeat right;
   background-size: 381px 274px;
 }
 .usage-section ul .background-wrapper-item-last .usage-section-last-background {
@@ -446,7 +433,7 @@ ul li {
   height: 100%;
   top: 80px;
   right: -20px;
-  background: url("../../assets/common/blob.svg") no-repeat;
+  background: url("../assets/common/blob.svg") no-repeat;
   background-size: 263px 247px;
 }
 .usage-section ul .background-wrapper-item-last:before {
@@ -556,7 +543,7 @@ ul li {
 .product-description-section .product-description-section-background {
   height: 414px;
   width: 100%;
-  background: url("../../assets/unsplash_r19PtSh4m7A.png");
+  background: url("../assets/unsplash_r19PtSh4m7A.png");
 }
 .product-description-section .section-title {
   margin-top: 87px;
@@ -580,7 +567,7 @@ ul li {
   padding-left: 40px;
 }
 .product-description-section .product-description-list__item:before {
-  background: url("../../assets/check-circle-1.svg");
+  background: url("../assets/check-circle-1.svg");
   top: 3px;
   left: 4px;
   position: absolute;
@@ -608,7 +595,7 @@ ul li {
   width: 165px;
   height: 205px;
   left: -24px;
-  background: url("../../assets/green-leaf.png");
+  background: url("../assets/green-leaf.png");
 }
 .price-section .price-list {
   margin-top: 65px;
@@ -797,7 +784,7 @@ ul li {
   left: -90px;
   top: 180px;
   z-index: 1000;
-  background: url("../../assets/green-leaf.png");
+  background: url("../assets/green-leaf.png");
   background-size: 100%;
 }
 .instagram-section .has-text-shining:after {
@@ -832,6 +819,19 @@ ul li {
 .instagram-section .photo-gallery img {
   margin-right: 15px;
   width: 185px;
+}
+
+.header {
+  padding: 12px;
+  background: #406440;
+  border-bottom: 1px solid rgba(154, 172, 154, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .order-link {
+  padding: 9px 30px;
+  margin-right: 12px;
 }
 
 .footer {
