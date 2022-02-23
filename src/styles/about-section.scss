@@ -1,0 +1,77 @@
+.about-section {
+  position: relative;
+  margin-bottom: 110px;
+
+  .section-icon {
+    margin: 100px 0 50px;
+
+    @include tablet {
+      margin: 120px 0 90px;
+    }
+  }
+
+  @include tablet {
+    .section-text {
+      width: 440px;
+      margin: 0 auto;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  @include has-text-underline {
+    background-size: 80%;
+  }
+
+  .content-container {
+    position: relative;
+  }
+
+  &-background {
+    position: relative;
+    width: 100%;
+    max-width: 410px;
+    margin: 27px auto 0;
+    height: 300px;
+    background: url("../images/common/blob.png") no-repeat center;
+
+    @include desktop {
+      top: -60px;
+      width: 990px;
+      max-width: 100%;
+      position: absolute;
+      z-index: 10000;
+      background: none;
+    }
+
+    &-left {
+      position: absolute;
+      width: 240px;
+      height: 200px;
+      left: -30px;
+      background: url("../images/about-section/about-section-bg1.png") no-repeat;
+      background-size: 241px 200px;
+
+      @include desktop {
+        left: 0;
+      }
+    }
+
+    &-right {
+      position: absolute;
+      right: -30px;
+      bottom: 0;
+      width: 229px;
+      height: 190px;
+      background: url("../images/about-section/about-section-bg2.png") no-repeat;
+      background-size: 262px 189px;
+
+      @include desktop {
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}

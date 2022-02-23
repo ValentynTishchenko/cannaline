@@ -1,0 +1,179 @@
+.usage-section {
+  background: $greenColor;
+  color: white;
+
+  .section-title {
+    margin-top: 85px;
+  }
+
+  @include has-test-shining {
+    background-size: 80%;
+    top: -25px;
+  }
+
+  @include has-text-underline();
+
+  .misc-wrapper {
+    padding: 0;
+    margin: 59px 0;
+    text-align: center;
+
+    &:before {
+      display: none;
+    }
+
+    @include desktop {
+      margin: 0;
+    }
+  }
+
+  .usage-section-list {
+    @include desktop {
+      display: flex;
+
+      &__first {
+        flex-direction: row-reverse;
+      }
+
+      & > ul {
+        width: 50%;
+      }
+    }
+  }
+
+  ul {
+    position: relative;
+    line-height: 30px;
+
+    @include tablet {
+      width: 500px;
+      margin: 80px auto 0;
+      padding-bottom: 100px;
+    }
+
+    .background-wrapper-item {
+      position: relative;
+      padding: 0;
+      width: 100%;
+      margin: 85px auto;
+      height: 260px;
+
+      @include tablet {
+        width: 480px;
+        height: 350px;
+      }
+
+      @include desktop {
+        width: 440px;
+        height: 350px;
+      }
+
+      .usage-section-background-wrapper {
+        position: absolute;
+        height: 100%;
+        width: 241px;
+        left: -25px;
+        background: url("../images/common/blob.svg") no-repeat left;
+        background-size: 100%;
+
+        @include tablet {
+          width: 286px;
+          height: 294px;
+          left: 0;
+        }
+      }
+
+      .usage-section-background {
+        position: absolute;
+        width: 334px;
+        height: 100%;
+        right: -30px;
+        top: 40px;
+        background: url("../images/usage-section/usage-section-bg.png") no-repeat right;
+        background-size: 100%;
+
+        @include tablet {
+          width: 397px;
+          right: 0;
+        }
+      }
+
+      &:before {
+        display: none;
+      }
+    }
+
+    .background-wrapper-item-last {
+      z-index: 1000;
+      position: relative;
+      padding: 0;
+      width: 410px;
+      margin: 85px auto;
+      height: 274px;
+
+      @include tablet {
+        width: 495px;
+      }
+
+      .usage-section-last-background-wrapper {
+        position: absolute;
+        height: 274px;
+        width: 381px;
+        left: -16px;
+        background: url("../images/usage-section/usage-section-last-bg.png") no-repeat right;
+        background-size: 100%;
+
+        @include tablet {
+          width: 467px;
+          height: 336px;
+        }
+      }
+
+      .usage-section-last-background {
+        position: absolute;
+        width: 263px;
+        height: 247px;
+        top: 80px;
+        right: -20px;
+        background: url("../images/common/blob.svg") no-repeat;
+        background-size: 100%;
+
+        @include tablet {
+          width: 284px;
+          height: 292px;
+          right: 0;
+        }
+      }
+
+      &:before {
+        display: none;
+      }
+    }
+
+    li {
+      position: relative;
+      margin-top: 20px;
+      padding-left: 26px;
+
+      @include desktop {
+        width: 400px;
+      }
+
+      @include large-desktop {
+        width: 541px;
+      }
+
+      &::before {
+        top: 10px;
+        left: 4px;
+        position: absolute;
+        display: inline-block;
+        content: ' ';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $lightGray;
+      }
+    }
+  }
+}

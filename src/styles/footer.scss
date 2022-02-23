@@ -1,0 +1,138 @@
+.footer {
+  @include desktop {
+    display: flex;
+
+    .footer-content {
+      width: 100%;
+    }
+
+    .home-button {
+      padding: 0;
+      width: 100px !important;
+    }
+  }
+
+  .content-wrapper {
+    background: $darkGreyColor;
+
+    @include tablet {
+      padding: 80px 0 0;
+      margin-left: 50px;
+    }
+  }
+
+  .footer-actions {
+    background: $darkGreyColor;
+    padding: 80px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet {
+      display: none;
+    }
+
+    .order-link {
+      background: $greenColor;
+      padding: 16px 44px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    .footer-actions {
+      display: none;
+    }
+
+    @include tablet {
+      width: 630px;
+      padding: 0 0 0 84px;
+      margin-top: 0;
+
+      .footer-actions {
+        position: relative;
+        left: -30px;
+        display: flex;
+        margin-top: 21px;
+        padding: 0;
+
+        .order-link {
+          font-size: 14px;
+          padding: 14px 44.5px;
+        }
+      }
+    }
+
+    li {
+      width: 210px;
+      color: $blackTitleColor;
+      margin: 0 0 40px;
+
+      h4 {
+
+        font-family: Circe, sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 23px;
+      }
+    }
+  }
+
+  .warning {
+    font-size: 12px;
+    line-height: 22.5px;
+    font-weight: 500;
+    color: $greyColor;
+    padding: 0 16px;
+    margin: 35px 0 36px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .copyright {
+    color: $greyColor;
+    border-top: 1px solid #7F8195;
+    text-align: center;
+    line-height: 21px;
+    padding: 29px 16px;
+
+    @include desktop {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .home-button {
+    font-family: Circe, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    padding: 31px 0 22px;
+    text-align: center;
+    color: $greenColor;
+    background: $lightGreenColor;
+
+    @include tablet {
+      padding: 20px 0;
+    }
+
+    @include desktop {
+
+    }
+  }
+
+  .left-logo-icon {
+    position: absolute;
+    margin-top: 100px;
+    width: 100px;
+    height: 60px;
+    background: url("../images/green-logo.svg") no-repeat;
+  }
+}

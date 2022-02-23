@@ -1,0 +1,51 @@
+.header {
+  padding: 12px;
+  background: $greenColor;
+  border-bottom: 1px solid rgba(154, 172, 154, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablet {
+    padding: 12px 54px;
+  }
+
+  ul {
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    li {
+      cursor: pointer;
+      margin-right: 40px;
+
+      .header-logo {
+        width: 110px;
+      }
+
+      .order-link {
+        padding: 9px 30px;
+        margin-right: 12px;
+      }
+
+      .menu-icon {
+        margin-left: 30px;
+        width: 30px;
+        height: 30px;
+
+        @include desktop {
+          display: none;
+        }
+      }
+
+      &:first-child {
+        justify-self: flex-start;
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

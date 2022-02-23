@@ -1,0 +1,40 @@
+.question-section {
+  .section-title {
+    text-align: left;
+  }
+
+  @include has-test-shining {
+    top: -40px;
+    background-size: 80%;
+  }
+
+  @include has-text-underline {
+    bottom: -20px;
+    background-size: 80%;
+  }
+
+  .section-subtitle {
+    text-transform: uppercase;
+  }
+
+  ul {
+    line-height: 30px;
+
+    li {
+      margin-top: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #DBDBDB;
+
+      p {
+        color: $greyTextColor;
+      }
+
+
+      @include tablet {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}

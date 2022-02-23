@@ -1,0 +1,58 @@
+.has-text-shining {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    content: ' ';
+    background: url("../images/light-green-text-shining.svg") no-repeat;
+  }
+}
+
+@mixin has-test-shining() {
+  .has-text-shining:after {
+    @content
+  }
+}
+
+.has-text-underline {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    width: 220px;
+    height: 20px;
+    content: ' ';
+    background: url("../images/text-uderline.svg") no-repeat;
+  }
+}
+
+@mixin has-text-underline() {
+  .has-text-underline:before {
+    bottom: -20px;
+    @content
+  }
+}
+
+.mobile-text-shining:after {
+  @include tablet {
+    display: none;
+  }
+}
+
+.tablet-text-shining:after {
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+  }
+}
+
+.desktop-text-shining:after {
+  display: none;
+
+  @include desktop {
+    display: inline-block;
+  }
+}

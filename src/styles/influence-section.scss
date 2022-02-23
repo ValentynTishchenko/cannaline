@@ -1,0 +1,124 @@
+.influence-section {
+  margin-bottom: 120px;
+  position: relative;
+  color: $greyTextColor;
+
+  .section-icon {
+    margin: 90px 0 50px;
+
+    @include tablet {
+      margin: 140px 0 90px;
+    }
+
+    @include tablet {
+      margin: 120px 0 90px;
+    }
+  }
+
+  .green-leaf {
+    position: absolute;
+    width: 230px;
+    height: 300px;
+    right: -30px;
+    bottom: -52px;
+    z-index: 1000;
+    background: url("../images/leaf-influence.png") no-repeat;
+    background-size: 90%;
+  }
+
+  .section-title {
+    position: relative;
+    color: black;
+    text-align: center;
+
+    @include has-text-underline();
+
+    @include tablet {
+      br {
+        display: none;
+      }
+    }
+
+    .rounded-circle {
+      z-index: -10;
+      position: absolute;
+      background: $item-background;
+      border-radius: 50%;
+      top: -20px;
+      width: 88px;
+      height: 88px;
+
+      @include tablet {
+        top: -65px;
+        width: 176px;
+        height: 176px;
+      }
+    }
+  }
+
+  .description {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+
+    @include tablet {
+      width: 590px;
+    }
+  }
+
+  ol {
+    margin: 85px auto 120px;
+    counter-reset: section;
+    list-style-type: none;
+    padding-left: 20px;
+
+    @include tablet {
+      margin: 65px auto 0;
+    }
+
+    @include desktop {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    li {
+      box-sizing: border-box;
+      padding-left: 50px;
+      position: relative;
+      line-height: 30px;
+      margin: 40px auto 40px;
+      list-style: none;
+
+      @include tablet {
+        width: 520px;
+      }
+
+      @include desktop {
+        width: 375px;
+      }
+
+      @include large-desktop {
+        width: 425px;
+      }
+
+
+      &:before {
+        font-size: 18px;
+        color: $greenColor;
+        font-weight: 600;
+        line-height: 50px;
+        text-align: center;
+        left: -20px;
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: $item-background;
+        counter-increment: section;
+        content: counters(section, ".") " ";
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.product-description-section {
+  margin-top: 110px;
+  background: $greenColor;
+  padding-bottom: 100px;
+  color: white;
+
+  @include desktop {
+    display: flex;
+    flex-direction: row-reverse;
+
+    .section {
+      flex-grow: 1;
+    }
+
+    .product-description-section-background {
+      width: 465px!important;
+    }
+  }
+
+  .product-description-section-background {
+    height: 414px;
+    width: 100%;
+    background-size: cover;
+    background: url("../images/description-side-bg.png") no-repeat;
+    background-position: 50% 50%;
+
+    @include tablet {
+      height: 316px;
+    }
+  }
+
+  .section-title {
+    margin-top: 87px;
+
+    @include tablet {
+      text-align: left;
+    }
+  }
+
+  @include has-test-shining {
+    background-size: 80%;
+    top: -30px;
+  }
+
+  @include has-text-underline();
+
+  .product-description-list {
+    margin-top: 67px;
+
+    &__item {
+      position: relative;
+      margin-top: 20px;
+      line-height: 30px;
+      padding-left: 40px;
+
+      @include tablet {
+        width: 380px;
+      }
+
+      &:before {
+        background: url("../images/check-circle-1.svg");
+        top: 3px;
+        left: 4px;
+        position: absolute;
+        display: inline-block;
+        content: '';
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .order-link {
+    margin-top: 50px;
+  }
+
+}
