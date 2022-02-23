@@ -11,18 +11,32 @@
   }
 
   ul {
-    width: 100%;
-    color: white;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    width: 100%;
+    color: white;
+
+    .desktop-menu-link {
+      display: none;
+
+      @include desktop {
+        display: block;
+      }
+    }
 
     li {
       cursor: pointer;
       margin-right: 40px;
 
       .header-logo {
-        width: 110px;
+        width: 80px;
+
+        @include tablet {
+          margin-left: 110px;
+        }
       }
 
       .order-link {
@@ -31,9 +45,13 @@
       }
 
       .menu-icon {
-        margin-left: 30px;
+        margin-left: 2px;
         width: 30px;
         height: 30px;
+
+        @include tablet {
+          margin-left: 30px;
+        }
 
         @include desktop {
           display: none;
@@ -41,7 +59,10 @@
       }
 
       &:first-child {
-        justify-self: flex-start;
+        margin-right: auto;
+      }
+
+      &:last-child {
         margin-right: 0;
         display: flex;
         align-items: center;

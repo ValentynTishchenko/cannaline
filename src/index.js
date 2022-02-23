@@ -1,7 +1,9 @@
 import './styles/main.scss'
 
+const initPriceTabs = () => {
 
-console.log('lol');
-console.log('lol');
-console.log('lol');
-console.log('lol');
+}
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  console.log("DOM fully loaded and parsed");
+});

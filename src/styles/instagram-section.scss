@@ -14,6 +14,20 @@
       }
     }
 
+    .has-text-shining:last-child:after {
+      display: none;
+    }
+
+    @include tablet {
+      .has-text-shining:first-child:after {
+        display: none;
+      }
+
+      .has-text-shining:last-child:after {
+        display: block;
+      }
+    }
+
     @include desktop {
       .has-text-shining:first-child:after {
         display: none;
@@ -45,6 +59,11 @@
     right: -30px;
     top: -30px;
     background-size: 60%;
+
+    @include tablet {
+      right: -50px;
+      background-size: 100%;
+    }
   }
 
   @include has-text-underline {

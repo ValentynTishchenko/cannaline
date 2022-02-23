@@ -197,7 +197,7 @@ ul li {
   right: -30px;
   width: 400px;
   height: 415px;
-  background: url("../images/welcome-section-background.svg") no-repeat right;
+  background: url("../images/welcome-section/welcome-section-background.svg") no-repeat right;
 }
 @media (min-width: 768px) {
   .welcome-section .background-wrapper {
@@ -243,7 +243,7 @@ ul li {
   max-width: 410px;
   margin: 27px auto 0;
   height: 300px;
-  background: url("../images/common/blob.png") no-repeat center;
+  background: url("../../public/images/common/blob.png") no-repeat center;
 }
 @media (min-width: 1024px) {
   .about-section-background {
@@ -549,7 +549,7 @@ ul li {
   height: 100%;
   width: 241px;
   left: -25px;
-  background: url("../images/common/blob.svg") no-repeat left;
+  background: url("../../public/images/common/blob.svg") no-repeat left;
   background-size: 100%;
 }
 @media (min-width: 768px) {
@@ -610,7 +610,7 @@ ul li {
   height: 247px;
   top: 80px;
   right: -20px;
-  background: url("../images/common/blob.svg") no-repeat;
+  background: url("../../public/images/common/blob.svg") no-repeat;
   background-size: 100%;
 }
 @media (min-width: 768px) {

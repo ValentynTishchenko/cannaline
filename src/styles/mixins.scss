@@ -49,6 +49,15 @@
   }
 }
 
+.tablet-text-shining:after {
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+  }
+}
+
+
 .desktop-text-shining:after {
   display: none;
 

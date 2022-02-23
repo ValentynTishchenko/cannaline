@@ -7,25 +7,23 @@
   @include desktop {
     display: flex;
     flex-direction: row-reverse;
-
-    .section {
-      flex-grow: 1;
-    }
-
-    .product-description-section-background {
-      width: 465px!important;
-    }
   }
 
   .product-description-section-background {
     height: 414px;
     width: 100%;
     background-size: cover;
-    background: url("../images/description-side-bg.png") no-repeat;
-    background-position: 50% 50%;
+    background: url("../images/product-description-section/product-description-section-bg.png") no-repeat;
 
     @include tablet {
       height: 316px;
+    }
+
+    @include desktop {
+      display: flex;
+      align-items: stretch;
+      width: 465px !important;
+      min-height: 100%;
     }
   }
 

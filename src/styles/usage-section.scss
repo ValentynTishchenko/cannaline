@@ -47,7 +47,7 @@
 
     @include tablet {
       width: 500px;
-      margin: 80px auto 0;
+      margin: 0px auto 0;
       padding-bottom: 100px;
     }
 
@@ -61,6 +61,7 @@
       @include tablet {
         width: 480px;
         height: 350px;
+        margin: 0 auto;
       }
 
       @include desktop {
@@ -73,7 +74,7 @@
         height: 100%;
         width: 241px;
         left: -25px;
-        background: url("../images/common/blob.svg") no-repeat left;
+        background: url("../../public/images/common/blob.svg") no-repeat left;
         background-size: 100%;
 
         @include tablet {
@@ -112,6 +113,7 @@
       height: 274px;
 
       @include tablet {
+        margin: 60px auto;
         width: 495px;
       }
 
@@ -135,7 +137,7 @@
         height: 247px;
         top: 80px;
         right: -20px;
-        background: url("../images/common/blob.svg") no-repeat;
+        background: url("../../public/images/common/blob.svg") no-repeat;
         background-size: 100%;
 
         @include tablet {

@@ -2,27 +2,23 @@
   color: white;
   text-align: center;
   background: $greenColor;
-  padding-bottom: 100px;
+  padding: 60px 0 100px;
 
   @include tablet {
-    .section-title {
-      br {
-        display: none;
-      }
-    }
-  }
-
-  @include desktop {
     padding-top: 70px;
     padding-bottom: 60px;
 
     .section-title {
+      br {
+        display: none;
+      }
+
       .has-text-shining:first-child:after {
-        display: none !important;
+        content: '';
+        display: none;
       }
     }
   }
-
 
   @include has-test-shining {
     top: -22px;
@@ -47,7 +43,6 @@
       margin-top: 64px;
       text-align: center;
 
-
       @include tablet {
         width: 491px;
         margin: 60px auto 0;
@@ -58,11 +53,8 @@
       }
 
       &-image {
-        padding: 20px;
-        background: #9AAC9A;
-        border-radius: 50%;
-        width: 44px;
-        height: 44px;
+        width: 110px;
+        height: 110px;
       }
 
       &-title {
