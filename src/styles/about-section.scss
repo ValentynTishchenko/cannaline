@@ -1,25 +1,12 @@
 .about-section {
   position: relative;
-  margin-bottom: 110px;
-  min-height: 790px;
+  margin-bottom: 30px;
 
   .section-icon {
-    margin: 100px 0 50px;
-  }
+    margin: 100px 0 80px;
 
-  @include tablet {
-    height: auto;
-    .section-icon {
+    @include tablet {
       margin: 120px 0 90px;
-    }
-
-    .section-text {
-      width: 440px;
-      margin: 0 auto;
-
-      br {
-        display: none;
-      }
     }
   }
 
@@ -27,68 +14,143 @@
     background-size: 80%;
   }
 
-  .content-container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  @include extra-large-desktop {
+    margin-bottom: 130px;
+  }
 
+  .content-container {
     .about-section-content {
       width: 100%;
     }
-  }
-
-
-  &-background {
-
-    margin-top: 57px;
-    height: 200px;
-    width: 240px;
-
-    @include desktop {
-      width: 290px;
-    }
-  }
-
-  &-background-left {
-    top: 240px;
-    position: absolute;
-    left: -35px;
-    width: 240px;
-    order: 2;
-    background: url("../images/about-section/left-bg.png") no-repeat;
-    background-size: 240px;
 
     @include tablet {
-      position: relative;
-      width: 50%;
-      left: 0;
+      .section-text {
+        width: 440px;
+        margin: 0 auto;
+
+        br {
+          display: none;
+        }
+      }
     }
 
     @include desktop {
-      left: 0;
+      margin: 0 auto 130px;
+      width: 440px;
     }
   }
 
-  &-background-right {
-    top: 320px;
-    position: absolute;
-    right: -35px;
-    width: 240px;
-    order: 3;
-    background: url("../images/about-section/right-bg.png") no-repeat;
-    background-size: 270px;
-
-    @include tablet {
-      position: relative;
-      width: 50%;
-      right: 0;
-    }
+  .mobile-background {
+    height: 270px;
+    position: relative;
+    margin-top: 60px;
 
     @include desktop {
-      right: 0;
-      top: 0;
+      margin: 0;
+      box-sizing: border-box;
+      top: 235px;
+      left: 0;
+      position: absolute;
+      height: 200px;
+      width: 100%;
     }
+
+    .left {
+      z-index: 10;
+      position: absolute;
+      left: -35px;
+      width: 240px;
+      height: 200px;
+      background: url("../images/about-section/left-bg.png") no-repeat;
+      background-size: 100%;
+
+      @include tablet {
+        display: block;
+        left: 80px;
+      }
+
+      @include desktop {
+        left: 45px;
+      }
+
+      @include large-desktop {
+        left: 106px;
+      }
+
+      @include extra-large-desktop {
+        left: -35px;
+        width: 470px;
+        height: 390px;
+      }
+    }
+
+    .left-blob {
+      position: absolute;
+      width: 246px;
+      height: 253px;
+      background: url("../images/about-section/blob.png") no-repeat;
+
+      @include desktop {
+        top: 52px;
+        left: -25px;
+      }
+
+      @include large-desktop {
+        left: 8px;
+      }
+
+      @include extra-large-desktop {
+        width: 435px;
+        height: 445px;
+      }
+    }
+
+    .right {
+      z-index: 10;
+      top: 20px;
+      position: absolute;
+      right: -35px;
+      width: 260px;
+      height: 190px;
+      background: url("../images/about-section/right-bg.png") no-repeat;
+      background-size: 100%;
+
+      @include tablet {
+        right: 30px;
+      }
+
+      @include large-desktop {
+        right: 66px;
+      }
+
+      @include extra-large-desktop {
+        right: -35px;
+        width: 477px;
+        height: 343px;
+      }
+    }
+
+    .right-blob {
+      position: absolute;
+      width: 246px;
+      height: 253px;
+      right: 90px;
+      background: url("../images/about-section/blob.png") no-repeat;
+
+      @include desktop {
+        right: -78px;
+        top: 64px
+      }
+
+      @include large-desktop {
+        right: 16px;
+      }
+
+      @include extra-large-desktop {
+        width: 435px;
+        height: 445px;
+      }
+    }
+
   }
 }

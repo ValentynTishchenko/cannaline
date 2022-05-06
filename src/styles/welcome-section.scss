@@ -3,13 +3,17 @@
   padding-bottom: 66px;
   display: flex;
   background: $greenColor url('../images/welcome-section/hand-small-screen.png') no-repeat bottom right;
-
   min-height: 980px;
 
   @include tablet {
     min-height: 620px;
     height: 620px;
+  }
 
+  @include large-desktop {
+    min-height: 780px;
+    height: 780px;
+    background: $greenColor url("../images/welcome-section/full-desctop-hand.png") no-repeat bottom right;
   }
 
   .welcome-content {

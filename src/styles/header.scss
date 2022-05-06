@@ -10,6 +10,14 @@
     padding: 12px 54px;
   }
 
+  @include large-desktop {
+    padding: 12px 130px;
+  }
+
+  @include extra-large-desktop {
+    padding: 12px 200px;
+  }
+
   ul {
     margin: 0;
     display: flex;
@@ -35,7 +43,7 @@
         width: 80px;
 
         @include tablet {
-          margin-left: 110px;
+          width: 110px;
         }
       }
 

@@ -53,6 +53,13 @@
     @include desktop {
       top: 70px;
     }
+
+    @include large-desktop {
+      height: 250px;
+      top: 100px;
+      background-size: 110%;
+    }
+
   }
 
   @include has-test-shining {
@@ -120,6 +127,14 @@
 
       img {
         width: 250px;
+      }
+    }
+
+    @include extra-large-desktop {
+      width: 1420px;
+
+      img {
+        width: 320px;
       }
     }
   }

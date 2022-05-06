@@ -1,8 +1,10 @@
 @import "fonts/circe/stylesheet.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
 .has-text-shining {
   position: relative;
 }
+
 .has-text-shining:after {
   position: absolute;
   width: 60px;
@@ -14,6 +16,7 @@
 .has-text-underline {
   position: relative;
 }
+
 .has-text-underline:before {
   position: absolute;
   width: 220px;
@@ -31,18 +34,36 @@
 .tablet-text-shining:after {
   display: none;
 }
-@media (min-width: 768px) {
-  .tablet-text-shining:after {
-    display: inline-block;
-  }
+
+.desktop-text-shining:after {
+  display: none;
+}
+
+.tablet-only-text-shining:after {
+  display: none;
 }
 
 .desktop-text-shining:after {
   display: none;
 }
-@media (min-width: 1024px) {
-  .desktop-text-shining:after {
+
+@media (min-width: 768px) {
+  .tablet-text-shining:after {
     display: inline-block;
+  }
+
+  .tablet-only-text-shining:after {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .desktop-text-shining:after{
+    display: inline
+  }
+
+  .tablet-only-text-shining:after {
+    display: none;
   }
 }
 

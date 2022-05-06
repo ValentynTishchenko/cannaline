@@ -79,7 +79,7 @@
     @include desktop {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
 
     li {
@@ -95,13 +95,12 @@
       }
 
       @include desktop {
-        width: 515px;
+        width: 375px;
       }
 
       @include large-desktop {
-        width: 515px;
+        width: 425px;
       }
-
 
       &:before {
         font-size: 18px;

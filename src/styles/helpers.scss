@@ -1,7 +1,3 @@
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1024px;
-$breakpoint-large-desktop: 1366px;
-
 @mixin tablet {
   @media (min-width: $breakpoint-tablet) {
     @content
@@ -16,6 +12,12 @@ $breakpoint-large-desktop: 1366px;
 
 @mixin large-desktop {
   @media (min-width: $breakpoint-large-desktop) {
+    @content
+  }
+}
+
+@mixin extra-large-desktop {
+  @media (min-width: $breakpoint-extra-large-desktop) {
     @content
   }
 }

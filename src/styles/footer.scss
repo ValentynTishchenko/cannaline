@@ -18,6 +18,12 @@
     @include tablet {
       padding: 80px 0 0;
       margin-left: 50px;
+
+
+    }
+
+    @include large-desktop {
+      margin-left: 80px;
     }
   }
 
@@ -51,6 +57,7 @@
 
     @include tablet {
       width: 630px;
+      justify-content: space-between;
       padding: 0 0 0 84px;
       margin-top: 0;
 
@@ -147,6 +154,13 @@
 
     @include tablet {
       display: block;
+      background-size: contain;
+      background-position: center;
+    }
+
+    @include large-desktop {
+      width: 160px;
+      height: 90px;
     }
   }
 

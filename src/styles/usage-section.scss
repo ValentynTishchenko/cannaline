@@ -9,6 +9,7 @@
   @include has-test-shining {
     background-size: 80%;
     top: -25px;
+    right: -40px;
   }
 
   @include has-text-underline();
@@ -134,7 +135,7 @@
       .usage-section-last-background {
         position: absolute;
         width: 263px;
-        height: 247px;
+        height: 270px;
         top: 80px;
         right: -20px;
         background: url("../../public/images/common/blob.svg") no-repeat;

@@ -41,11 +41,15 @@
   }
 }
 
-.tablet-text-shining:after {
+.tablet-only-text-shining:after {
   display: none;
 
   @include tablet {
     display: inline-block;
+  }
+
+  @include desktop {
+    display: none;
   }
 }
 
@@ -56,7 +60,6 @@
     display: inline-block;
   }
 }
-
 
 .desktop-text-shining:after {
   display: none;

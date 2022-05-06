@@ -17,6 +17,14 @@
   @include tablet {
     padding: 0 48px;
   }
+
+  @include large-desktop {
+    padding: 0 130px;
+  }
+
+  @include extra-large-desktop {
+    padding: 0 200px;
+  }
 }
 
 .section-main-title {

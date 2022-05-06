@@ -1,37 +1,64 @@
 .product-description-section {
   margin-top: 110px;
   background: $greenColor;
-  padding-bottom: 100px;
+  padding: 0 0 100px 0;
   color: white;
 
   @include desktop {
+    padding-bottom: 0;
     display: flex;
     flex-direction: row-reverse;
   }
 
+  @include large-desktop {
+    justify-content: space-between;
+  }
+
+  .product-description-content-section {
+    @include desktop {
+      padding-bottom: 75px;
+    }
+
+    @include large-desktop {
+      margin-left: 130px;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .section-title {
+      margin-top: 87px;
+
+      @include tablet {
+        text-align: left;
+      }
+
+      @include desktop {
+        margin-top: 100px;
+      }
+    }
+  }
+
   .product-description-section-background {
+    background: url("../images/product-description-section/sm-image.png") no-repeat;
     height: 414px;
     width: 100%;
     background-size: cover;
-    background: url("../images/product-description-section/product-description-section-bg.png") no-repeat;
 
     @include tablet {
+      background: url("../images/product-description-section/product-description-section-bg.png") no-repeat;
       height: 316px;
     }
 
     @include desktop {
-      display: flex;
-      align-items: stretch;
+      justify-content: stretch;
       width: 465px !important;
-      min-height: 100%;
+      height: inherit;
+      background: url("../images/product-description-section/bg-image-long.png") no-repeat;
+      background-size: cover;
     }
-  }
 
-  .section-title {
-    margin-top: 87px;
-
-    @include tablet {
-      text-align: left;
+    @include extra-large-desktop {
+      width: 725px !important;
     }
   }
 
@@ -53,6 +80,10 @@
 
       @include tablet {
         width: 380px;
+      }
+
+      @include desktop {
+        width: 500px;
       }
 
       &:before {

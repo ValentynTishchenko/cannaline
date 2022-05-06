@@ -2,11 +2,10 @@
   color: white;
   text-align: center;
   background: $greenColor;
-  padding: 60px 0 100px;
+  padding: 60px 12px 100px;
 
   @include tablet {
-    padding-top: 70px;
-    padding-bottom: 60px;
+    padding: 70px 48px 80px;
 
     .section-title {
       br {
