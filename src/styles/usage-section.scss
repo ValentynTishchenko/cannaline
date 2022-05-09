@@ -122,7 +122,7 @@
     }
 
     .background-wrapper-item-last {
-      z-index: 1000;
+      z-index: $inner-z-index;
       position: relative;
       padding: 0;
       width: 410px;

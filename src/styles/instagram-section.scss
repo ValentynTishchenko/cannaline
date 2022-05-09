@@ -41,7 +41,7 @@
     height: 200px;
     left: -90px;
     top: 180px;
-    z-index: 1000;
+    z-index: $inner-z-index;
     background: url("../images/green-leaf.png") no-repeat;
     background-size: 90%;
 

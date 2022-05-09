@@ -34,9 +34,20 @@
       text-align: center;
 
       &.expanded {
+        .price-list__item-compound img {
+          transform: rotate(180deg);
+        }
+
         .price-list__item-detailed-description {
           display: block;
         }
+
+      }
+
+      .price-list__old_item-price {
+        text-align: right;
+        color: $greyColor;
+        text-decoration: line-through;
       }
 
       .price-list__item-detailed-description {
@@ -124,8 +135,13 @@
         flex-direction: row;
         justify-content: space-between;
 
+
         .price {
           color: $greenColor;
+        }
+
+        p {
+          margin-bottom: 0;
         }
       }
 

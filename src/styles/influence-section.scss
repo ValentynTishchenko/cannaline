@@ -21,7 +21,7 @@
     height: 300px;
     right: -30px;
     bottom: 0px;
-    z-index: 1000;
+    z-index: $inner-z-index;
     background: url("../images/leaf-influence.png") no-repeat;
     background-size: 90%;
   }

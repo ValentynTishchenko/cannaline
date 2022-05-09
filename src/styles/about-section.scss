@@ -60,7 +60,7 @@
     }
 
     .left {
-      z-index: 10;
+      z-index: $inner-z-index;
       position: absolute;
       left: -35px;
       width: 240px;
@@ -115,7 +115,7 @@
     }
 
     .right {
-      z-index: 10;
+      z-index: $inner-z-index;
       top: 20px;
       position: absolute;
       right: -35px;
