@@ -2,8 +2,8 @@
   "name": "cannaline",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack serve --mode development --open --config webpack.config.js --hot"
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack serve --open --config webpack.dev.js"
   },
   "dependencies": {
     "css-loader": "^6.6.0",
