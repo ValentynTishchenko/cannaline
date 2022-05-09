@@ -2,6 +2,7 @@
   "name": "cannaline",
   "version": "1.0.0",
   "scripts": {
+    "prod": "",
     "build": "webpack --config webpack.prod.js",
     "start": "webpack serve --open --config webpack.dev.js"
   },
