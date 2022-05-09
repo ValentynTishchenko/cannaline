@@ -70,6 +70,10 @@
         height: 350px;
       }
 
+      @include large-desktop {
+        margin: 0;
+      }
+
       .usage-section-background-wrapper {
         position: absolute;
         height: 100%;
@@ -82,6 +86,13 @@
           width: 286px;
           height: 294px;
           left: 0;
+        }
+
+        @include large-desktop {
+          position: absolute;
+          left: -90px;
+          width: 320px;
+          height: 330px;
         }
       }
 
@@ -97,6 +108,11 @@
         @include tablet {
           width: 397px;
           right: 0;
+        }
+
+        @include large-desktop {
+          width: 446px;
+          height: 348px;
         }
       }
 
@@ -118,6 +134,10 @@
         width: 495px;
       }
 
+      @include large-desktop {
+        margin: 0 0 0 auto;
+      }
+
       .usage-section-last-background-wrapper {
         position: absolute;
         height: 274px;
@@ -129,6 +149,12 @@
         @include tablet {
           width: 467px;
           height: 336px;
+        }
+
+        @include large-desktop {
+          right: -100px;
+          width: 538px;
+          height: 386px;
         }
       }
 
@@ -145,6 +171,12 @@
           width: 284px;
           height: 292px;
           right: 0;
+        }
+
+        @include large-desktop {
+          width: 328px;
+          height: 336px;
+          right: -90px;
         }
       }
 

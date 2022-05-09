@@ -3,7 +3,9 @@
   padding-bottom: 66px;
   display: flex;
   background: $greenColor url('../images/welcome-section/hand-small-screen.png') no-repeat bottom right;
+  padding-top: 80px;
   min-height: 980px;
+
 
   @include tablet {
     min-height: 620px;

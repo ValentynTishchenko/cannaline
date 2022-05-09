@@ -1,6 +1,9 @@
 .header {
+  position: fixed;
+  width: 100%;
   padding: 12px;
   background: $greenColor;
+  z-index: $header-z-index;
   border-bottom: 1px solid rgba(154, 172, 154, 0.3);
   display: flex;
   justify-content: space-between;

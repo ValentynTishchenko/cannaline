@@ -45,10 +45,14 @@
     position: relative;
     margin-top: 60px;
 
+    @include tablet {
+      height: 310px;
+    }
+
     @include desktop {
       margin: 0;
       box-sizing: border-box;
-      top: 235px;
+      top: 195px;
       left: 0;
       position: absolute;
       height: 200px;
@@ -75,6 +79,8 @@
 
       @include large-desktop {
         left: 106px;
+        width: 290px;
+        height: 242px;
       }
 
       @include extra-large-desktop {
@@ -86,17 +92,20 @@
 
     .left-blob {
       position: absolute;
-      width: 246px;
-      height: 253px;
+      width: 226px;
+      height: 230px;
       background: url("../images/about-section/blob.png") no-repeat;
 
-      @include desktop {
+      @include tablet {
+        background-size: 100%;
         top: 52px;
         left: -25px;
       }
 
       @include large-desktop {
         left: 8px;
+        width: 270px;
+        height: 278px;
       }
 
       @include extra-large-desktop {
@@ -121,6 +130,8 @@
 
       @include large-desktop {
         right: 66px;
+        width: 300px;
+        height: 215px;
       }
 
       @include extra-large-desktop {
@@ -139,7 +150,9 @@
 
       @include desktop {
         right: -78px;
-        top: 64px
+        top: 64px;
+        width: 270px;
+        height: 275px;
       }
 
       @include large-desktop {

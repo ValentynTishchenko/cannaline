@@ -33,12 +33,30 @@
       border-radius: 20px;
       text-align: center;
 
+      &.expanded {
+        .price-list__item-detailed-description {
+          display: block;
+        }
+      }
+
+      .price-list__item-detailed-description {
+        display: none;
+        color: $greyColor;
+        text-align: left;
+        margin-bottom: 12px;
+
+        li {
+          margin-top: 10px
+        }
+      }
+
       @include tablet {
         width: 400px;
       }
 
       @include desktop {
         width: 290px;
+        padding: 20px 16px;
       }
 
       @include large-desktop {
@@ -59,12 +77,11 @@
         font-weight: 600;
         line-height: 40px;
         display: flex;
-
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-
         color: $greenColor;
+        cursor: pointer;
 
         span {
           margin-right: 15px;
@@ -98,7 +115,6 @@
         @include desktop {
           width: 100%;
         }
-
       }
 
       &-price {

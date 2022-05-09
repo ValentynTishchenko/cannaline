@@ -99,6 +99,12 @@
     text-transform: uppercase;
   }
 
+  .mobile-alert {
+    @include tablet {
+      display: none;
+    }
+  }
+
   .health-warning {
     display: none;
     text-align: center;
@@ -106,6 +112,20 @@
     color: #616B84;
 
     @include tablet {
+      display: block;
+    }
+
+    @include large-desktop {
+      display: none;
+    }
+  }
+
+  .desc-alert {
+    display: none;
+    text-align: center;
+    margin: 60px 0 40px;
+
+    @include large-desktop {
       display: block;
     }
   }

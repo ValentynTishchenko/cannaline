@@ -6,13 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cannaline</title>
-    <link rel="stylesheet" href="main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
           integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 <header id="header" class="section header">
+
     <ul>
         <li>
             <img class="header-logo" src="images/logo.svg" alt="logo"/>
@@ -26,7 +26,7 @@
         <li class="desktop-menu-link">Питання</li>
         <li>
             <a class="order-link" href="#feedback-form">Замовити</a>
-            <img class="menu-icon" src="images/menu-icon.svg" alt="logo"/>
+            <img id="menu-icon" class="menu-icon" src="images/menu-icon.svg" alt="logo"/>
         </li>
     </ul>
 </header>
@@ -257,6 +257,18 @@
                 <div class="price-list__item-compound">
                     <span>Склад</span> <img alt="show more" src="images/common/up-arrow.svg"/>
                 </div>
+                <ul class="price-list__item-detailed-description">
+                    <li>
+                        <b>Склад:</b> олія з насіння конопель холодного віджиму, КБД - каннабідіол
+                    </li>
+                    <li>
+                        <b>Об'єм:</b> 10 мл (~ 250 крапель)
+                    </li>
+                    <li>
+                        <b>Вага:</b> 9,7 г (містить КБД 190 мг +-5%)
+                        2% - відсоток КБД у загальному обсязі олії
+                    </li>
+                </ul>
                 <div class="divider"></div>
                 <div class="price-list__item-price">
                     <p class="label">Ціна</p>
@@ -271,6 +283,18 @@
                 <div class="price-list__item-compound">
                     <span>Склад</span> <img alt="show more" src="images/common/up-arrow.svg"/>
                 </div>
+                <ul class="price-list__item-detailed-description">
+                    <li>
+                        <b>Склад:</b> олія з насіння конопель холодного віджиму, КБД - каннабідіол
+                    </li>
+                    <li>
+                        <b>Об'єм:</b> 10 мл (~ 250 крапель)
+                    </li>
+                    <li>
+                        <b>Вага:</b> 9,7 г (містить КБД 190 мг +-5%)
+                        2% - відсоток КБД у загальному обсязі олії
+                    </li>
+                </ul>
                 <div class="divider"></div>
                 <div class="price-list__item-price">
                     <p class="label">Ціна</p>
@@ -285,6 +309,18 @@
                 <div class="price-list__item-compound">
                     <span>Склад</span> <img alt="show more" src="images/common/up-arrow.svg"/>
                 </div>
+                <ul class="price-list__item-detailed-description">
+                    <li>
+                        <b>Склад:</b> олія з насіння конопель холодного віджиму, КБД - каннабідіол
+                    </li>
+                    <li>
+                        <b>Об'єм:</b> 10 мл (~ 250 крапель)
+                    </li>
+                    <li>
+                        <b>Вага:</b> 9,7 г (містить КБД 190 мг +-5%)
+                        2% - відсоток КБД у загальному обсязі олії
+                    </li>
+                </ul>
                 <div class="divider"></div>
                 <div class="price-list__item-price">
                     <p class="label">Ціна</p>
@@ -391,7 +427,6 @@
                     <p>Аптека Томаш №1</p>
                     <p>вул. Достоєвського 21</p>
                 </li>
-
                 <li>
                     <div class="footer-actions">
                         <img alt="inst link" src="images/instagram-section/insta.svg">
@@ -399,8 +434,16 @@
                     </div>
                 </li>
             </ul>
+            <div class="mobile-alert has-text-align-center">
+                <img src="images/footer/mobile-alert-1.png" alt="warning text">
+                <img src="images/footer/mobile-alert-2.png" alt="warning text">
+                <img src="images/footer/mobile-alert-3.png" alt="warning text">
+            </div>
             <div class="health-warning has-text-align-center">
                 <img src="images/footer/warning.png" alt="warning text">
+            </div>
+            <div class="desc-alert has-text-align-center">
+                <img src="images/footer/desc-alert.png" alt="warning text">
             </div>
             <div class="warning">
                 Перед застосуванням препарату проконсультуйтесь з лікарем
@@ -416,5 +459,4 @@
     </a>
 </footer>
 </body>
-<script defer src="app.js"></script>
 </html>
