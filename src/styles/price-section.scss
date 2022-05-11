@@ -3,10 +3,9 @@
     margin: 56px 0 54px;
   }
 
-  .has-text-underline:before {
+  @include has-text-underline {
     left: -10px;
-    bottom: -20px;
-    background-size: 50%;
+    background-size: 60%;
   }
 
   .green-leaf {

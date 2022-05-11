@@ -73,23 +73,25 @@
     }
   }
 
-  @include has-text-underline {
-    background-size: 90%;
-  }
-
   .insta-link-section {
     margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    img {
-      height: 18px;
-    }
+    .instagram-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
 
-    a {
-      margin-left: 12px;
-      display: inline
+
+      img {
+        height: 18px;
+      }
+
+      span {
+        margin-left: 12px;
+      }
     }
   }
 

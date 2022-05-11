@@ -89,6 +89,10 @@
       .order-link {
         padding: 9px 30px;
         margin-right: 12px;
+
+        &:hover {
+          text-decoration: none;
+        }
       }
 
       a {

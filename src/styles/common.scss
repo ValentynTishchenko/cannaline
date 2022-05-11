@@ -32,6 +32,10 @@ ul {
   padding: 19px 59px;
   border: none;
   text-decoration: none;
+
+  &:hover {
+    background: $orderButtonColorHover;
+  }
 }
 
 .link {

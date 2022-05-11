@@ -38,9 +38,17 @@
       display: none;
     }
 
+    .instagram-link {
+      height: 36px;
+    }
+
     .order-link {
       background: $greenColor;
       padding: 16px 44px;
+
+      &:hover {
+        background: $greenColorHover;
+      }
     }
   }
 
