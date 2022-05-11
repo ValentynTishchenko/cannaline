@@ -32,6 +32,19 @@
       border-radius: 20px;
       text-align: center;
 
+      @include tablet {
+        width: 400px;
+      }
+
+      @include desktop {
+        width: 290px;
+        padding: 20px 16px 46px;
+      }
+
+      @include large-desktop {
+        width: 360px;
+      }
+
       &.expanded {
         .price-list__item-compound img {
           transform: rotate(180deg);
@@ -58,19 +71,6 @@
         li {
           margin-top: 10px
         }
-      }
-
-      @include tablet {
-        width: 400px;
-      }
-
-      @include desktop {
-        width: 290px;
-        padding: 20px 16px;
-      }
-
-      @include large-desktop {
-        width: 360px;
       }
 
       .divider {

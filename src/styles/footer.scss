@@ -170,6 +170,12 @@
     @include tablet {
       padding: 20px 0;
     }
+
+    @include desktop {
+      padding: 0;
+      font-size: 0;
+      background: $lightGreenColor url("../images/arrow.svg") no-repeat center;
+    }
   }
 
   .left-logo-icon {
