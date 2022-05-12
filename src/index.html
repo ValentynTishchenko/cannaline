@@ -17,7 +17,7 @@
             <a href="#">
                 <img class="header-logo" src="images/logo.svg" alt="logo"/>
             </a>
-            <span id="close-mobile-header">Назад ></span>
+            <span id="close-mobile-header">Назад <img src="images/back-icon.svg" alt="back button"></span>
         </li>
         <li class="desktop-menu-link"><a href="#welcome">Головна</a></li>
         <li class="desktop-menu-link"><a href="#about">Про нас</a></li>
@@ -389,15 +389,15 @@
         <p class="section-text">Замовити можна, залишивши заявку на сайті,<br> або забрати у <a class="link"
                                                                                                 href="#footer">точці
             видачі</a>.</p>
-        <form class="feedback-form" action="">
+        <form class="feedback-form">
             <div class="input-container">
                 <p class="input-wrapper">
-                    <label for="tel">Номер телефону</label>
-                    <input id="tel" type="text">
+                    <label for="customer-number">Номер телефону</label>
+                    <input id="customer-number" type="text" required>
                 </p>
                 <p class="input-wrapper">
-                    <label for="email">Електронна пошта</label>
-                    <input id="email" placeholder="georgia.young@example.com" type="text">
+                    <label for="customer-email">Електронна пошта</label>
+                    <input id="customer-email" placeholder="georgia.young@example.com" type="text" required>
                 </p>
             </div>
             <div>
@@ -406,7 +406,7 @@
                     <textarea placeholder="Введіть ваш текст" id="text"></textarea>
                 </p>
             </div>
-            <input type="button" value="Залишити заявку">
+            <input id="send-feedback-button" type="submit" value="Залишити заявку">
         </form>
     </section>
     <section class="section instagram-section">

@@ -31,9 +31,11 @@
       padding: 20px;
       border-radius: 20px;
       text-align: center;
+      height: fit-content;
 
       @include tablet {
         width: 400px;
+        padding-bottom: 46px;
       }
 
       @include desktop {

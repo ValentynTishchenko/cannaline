@@ -50,10 +50,20 @@
 
       @include desktop() {
         width: 568px;
+
+        @include has-test-shining {
+          width: 57px;
+          height: 62px;
+        }
       }
 
       @include extra-large-desktop {
         width: 758px;
+
+        @include has-test-shining {
+          width: 70px;
+          height: 76px;
+        }
       }
     }
 
