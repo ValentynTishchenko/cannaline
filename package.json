@@ -2,7 +2,7 @@
   "name": "cannaline",
   "version": "1.0.0",
   "scripts": {
-    "prod": "yarn build && node server.js",
+    "prod": "node server.js",
     "build": "webpack --config webpack.prod.js",
     "start": "webpack serve --open --config webpack.dev.js"
   },
