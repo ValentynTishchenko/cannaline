@@ -1,7 +1,9 @@
+@import "reset";
 @import "fonts";
 @import "variables";
 @import "helpers";
-@import "mixins";
+@import "media";
+@import "text-decorators";
 
 @import "common";
 @import "section";
@@ -17,6 +19,5 @@
 @import "question-section";
 @import "feedback-section";
 @import "instagram-section";
-
 @import "header";
 @import "footer";

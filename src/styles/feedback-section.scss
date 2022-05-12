@@ -11,18 +11,19 @@
     }
   }
 
-  @include has-test-shining {
-    top: -40px;
-    background-size: 80%;
-    right: -30px;
-
-    @include tablet {
+  @include tablet {
+    @include has-test-shining {
       display: none;
     }
   }
 
   @include has-text-underline {
-    background-size: 80%;
+    background-size: 70%;
+    left: -20px;
+
+    @include tablet {
+      background-size: 90%;
+    }
   }
 
   .section-text {

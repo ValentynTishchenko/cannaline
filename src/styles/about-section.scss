@@ -2,20 +2,28 @@
   position: relative;
   margin-bottom: 30px;
 
+  @include has-text-underline {
+    background-size: 80%;
+
+    @include tablet {
+      background-size: 100%;
+    }
+  }
+
   .section-icon {
     margin: 100px 0 80px;
 
     @include tablet {
       margin: 120px 0 90px;
     }
-  }
 
-  @include has-text-underline {
-    background-size: 80%;
+    @include extra-large-desktop {
+      margin: 230px 0 90px;
+    }
   }
 
   @include extra-large-desktop {
-    margin-bottom: 130px;
+    margin-bottom: 65px;
   }
 
   .content-container {
@@ -81,12 +89,15 @@
         left: 106px;
         width: 290px;
         height: 242px;
+        background: url("../images/about-section/left-bg-large.svg") no-repeat;
+        background-size: 100%;
       }
 
       @include extra-large-desktop {
-        left: -35px;
+        left: 165px;
         width: 470px;
         height: 390px;
+        background-size: 100%;
       }
     }
 
@@ -132,12 +143,14 @@
         right: 66px;
         width: 300px;
         height: 215px;
+        background: url("../images/about-section/right-bg-large.svg") no-repeat;
+        background-size: 100%;
       }
 
       @include extra-large-desktop {
-        right: -35px;
         width: 477px;
         height: 343px;
+        right: 165px;
       }
     }
 
@@ -157,6 +170,7 @@
 
       @include large-desktop {
         right: 16px;
+        background-size: 100%;
       }
 
       @include extra-large-desktop {

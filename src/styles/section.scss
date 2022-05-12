@@ -2,7 +2,7 @@
 
 @mixin title {
   font-family: Circe, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
 
   i {
     font-style: normal !important;
@@ -43,6 +43,10 @@
 
   @include tablet {
     font-size: 48px;
+  }
+
+  @include extra-large-desktop {
+    font-size: 64px;
   }
 }
 

@@ -21,20 +21,24 @@
     }
   }
 
-  @include has-test-shining {
-    right: -40px;
-    top: -30px;
-    background-size: 80%;
-  }
-
   @include has-text-underline {
-    bottom: -20px;
-    background-size: 80%;
+    background-size: 75%;
+
+    @include tablet {
+      background-size: 100%;
+      left: -22px;
+    }
   }
 
   @include large-desktop {
     padding-left: 130px;
     padding-right: 130px;
+  }
+
+  @include extra-large-desktop {
+    .section-subtitle {
+      font-size: 24px;
+    }
   }
 
   .section-subtitle {
@@ -50,7 +54,12 @@
       border-bottom: 1px solid #DBDBDB;
 
       p {
+        font-weight: 400;
         color: $greyTextColor;
+
+        @include extra-large-desktop {
+          width: 1260px;
+        }
       }
 
 

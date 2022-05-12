@@ -3,6 +3,10 @@
   position: relative;
   color: $greyTextColor;
 
+  @include extra-large-desktop {
+    padding-bottom: 150px;
+  }
+
   .section-icon {
     margin: 90px 0 50px;
 
@@ -31,7 +35,11 @@
     color: black;
     text-align: center;
 
-    @include has-text-underline();
+    @include has-text-underline {
+      bottom: -12px;
+      background-size: 90%;
+    }
+  ;
 
     @include tablet {
       br {

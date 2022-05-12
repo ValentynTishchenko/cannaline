@@ -4,6 +4,14 @@
   background: $greenColor;
   padding: 60px 12px 100px;
 
+  @include has-text-underline {
+    background-size: 80%;
+
+    @include tablet {
+      background-size: 100%;
+    }
+  }
+
   @include tablet {
     padding: 70px 48px 80px;
 
@@ -17,11 +25,6 @@
         display: none;
       }
     }
-  }
-
-  @include has-test-shining {
-    top: -22px;
-    background-size: 70%;
   }
 
   .advantages-list {
@@ -39,12 +42,30 @@
       text-align: center;
 
       @include tablet {
+        font-size: 16px;
         width: 491px;
         margin: 60px auto 0;
       }
 
+      @include desktop {
+        width: 300px;
+
+        p {
+          width: 258px;
+          margin: 20px auto;
+        }
+      }
+
       @include large-desktop {
         width: 350px;
+      }
+
+      @include extra-large-desktop {
+        width: 400px;
+
+        p {
+          width: 100%;
+        }
       }
 
       &-image {
@@ -56,9 +77,11 @@
         margin: 0 auto;
         width: 260px;
         font-size: 20px;
+
+        @include tablet {
+          font-size: 24px;
+        }
       }
-
     }
-
   }
 }

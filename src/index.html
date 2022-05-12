@@ -32,7 +32,7 @@
         </li>
         <li class="desktop-menu-link">
             <a class="has-align-center" href="https://www.instagram.com/cannaline.ua/">
-                <img alt="inst link" src="images/instagram.png">
+                <img alt="inst link" src="images/instagram.svg">
             </a>
         </li>
         <li>
@@ -41,10 +41,10 @@
         </li>
     </ul>
 </header>
-<main>
+<main id="main">
     <section id="welcome" class="section welcome-section">
         <div class="welcome-content">
-            <h1 class="section-main-title">
+            <h1 class="section-title section-main-title">
                 Не та <i class="mobile-text-shining has-text-shining">конопля</i>,<br/> що <i
                     class="tablet-text-shining has-text-shining">дуркує</i>, <span>а та, <i class="has-text-underline">що лікує</i></span>
             </h1>
@@ -63,14 +63,13 @@
                     Про <i class="has-text-underline">Cannaline</i>
                 </h2>
                 <p class="section-text">
-                    <b>Cannaline</b> - це представник чеського <br>
-                    бренду Cannadorra на українському ринку.<br>
+                    <b>Cannaline</b> - це представник &#8203 чеського<br> &#8203
+                    бренду Cannadorra на українському ринку.<br> &#8203
                     Наша олія КБД - цe
                     <b>схвалена чеським та європейським законодавствами</b> дієтична добавка.
                 </p>
             </div>
         </div>
-
         <div class="mobile-background">
             <div class="left"></div>
             <div class="left-blob"></div>
@@ -172,7 +171,7 @@
         <div class="misc-wrapper">
             <img src="images/common/misc.png" alt="">
         </div>
-        <div class="usage-section-list">
+        <div class="usage-section-list second-usage-section-list">
             <ul>
                 <li>
                     Для <b>придушення м’язових судом.</b>
@@ -305,8 +304,7 @@
                         <b>Об'єм:</b> 10 мл (~ 250 крапель)
                     </li>
                     <li>
-                        <b>Вага:</b> 9,7 г (містить КБД 190 мг +-5%)
-                        2% - відсоток КБД у загальному обсязі олії
+                        <b>Вага:</b> 9,7 г (містить КБД 475 мг +-5%) 5% - відсоток КБД у загальному обсязі олії
                     </li>
                 </ul>
                 <div class="divider"></div>
@@ -334,8 +332,7 @@
                         <b>Об'єм:</b> 10 мл (~ 250 крапель)
                     </li>
                     <li>
-                        <b>Вага:</b> 9,7 г (містить КБД 190 мг +-5%)
-                        2% - відсоток КБД у загальному обсязі олії
+                        <b>Вага:</b> Вага: 9,7 г (містить КБД 970 мг +-5%) 10% - відсоток КБД у загальному обсязі олії
                     </li>
                 </ul>
                 <div class="divider"></div>
@@ -373,7 +370,7 @@
                     КБД.</p>
             </li>
             <li>
-                <h3>Як застосовувати та дозувати КБД?</h3>
+                <h3 class="section-subtitle">Як застосовувати та дозувати КБД?</h3>
                 <p>Краплі олії КБД капають під язик
                     та утримують її там впродовж 1 хвилини. Краще за все приймати олію за 10 хвилин до чи після прийому
                     їжі.
@@ -424,10 +421,26 @@
             </a>
         </div>
         <div class="photo-gallery">
-            <img src="images/instagram-section/instagram-section-img-1.svg" alt="">
-            <img src="images/instagram-section/instagram-section-img-2.svg" alt="">
-            <img src="images/instagram-section/instagram-section-img-3.png" alt="">
-            <img src="images/instagram-section/instagram-section-img-4.png" alt="">
+            <picture>
+                <source media="(max-width: 1365px)" srcset="images/instagram-section/instagram-section-img-1.svg">
+                <source media="(min-width: 1366px)" srcset="images/instagram-section/instagram-section-img-1-large.svg">
+                <img src="images/instagram-section/instagram-section-img-1.svg" alt="">
+            </picture>
+            <picture>
+                <source media="(max-width: 1365px)" srcset="images/instagram-section/instagram-section-img-2.svg">
+                <source media="(min-width: 1366px)" srcset="images/instagram-section/instagram-section-img-2-large.svg">
+                <img src="images/instagram-section/instagram-section-img-2.svg" alt="">
+            </picture>
+            <picture>
+                <source media="(max-width: 1365px)" srcset="images/instagram-section/instagram-section-img-3.svg">
+                <source media="(min-width: 1366px)" srcset="images/instagram-section/instagram-section-img-3-large.svg">
+                <img src="images/instagram-section/instagram-section-img-3.svg" alt="">
+            </picture>
+            <picture>
+                <source media="(max-width: 1365px)" srcset="images/instagram-section/instagram-section-img-4.svg">
+                <source media="(min-width: 1366px)" srcset="images/instagram-section/instagram-section-img-4-large.svg">
+                <img src="images/instagram-section/instagram-section-img-4.svg" alt="">
+            </picture>
         </div>
     </section>
 </main>
@@ -461,7 +474,7 @@
                 <img src="images/footer/mobile-alert-3.png" alt="warning text">
             </div>
             <div class="health-warning has-text-align-center">
-                <img src="images/footer/warning.png" alt="warning text">
+                <img src="images/footer/desc-alert.svg" alt="warning text">
             </div>
             <div class="desc-alert has-text-align-center">
                 <img src="images/footer/desc-alert.png" alt="warning text">
@@ -475,7 +488,7 @@
             </div>
         </div>
     </div>
-    <a class="home-button" href="#header">
+    <a class="home-button" href="#">
         На головну
     </a>
 </footer>

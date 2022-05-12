@@ -4,8 +4,8 @@
   }
 
   @include has-text-underline {
-    left: -10px;
-    background-size: 60%;
+    left: -12px;
+    background-size: 70%;
   }
 
   .green-leaf {
@@ -43,6 +43,11 @@
 
       @include large-desktop {
         width: 360px;
+      }
+
+      @include extra-large-desktop {
+        width: 468px;
+        padding: 20px 40px 46px;
       }
 
       &.expanded {
@@ -146,6 +151,11 @@
 
       .order-link {
         margin-top: 24px;
+        font-size: 16px;
+
+        @include extra-large-desktop {
+          font-size: 18px;
+        }
       }
     }
   }

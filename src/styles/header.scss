@@ -2,9 +2,9 @@
   position: fixed;
   width: 100%;
   padding: 12px;
+  font-family: 'Circle Thin Font', sans-serif;
   background: $greenColor;
   z-index: $header-z-index;
-  font-size: 16px;
   border-bottom: 1px solid rgba(154, 172, 154, 0.3);
   display: flex;
   justify-content: space-between;

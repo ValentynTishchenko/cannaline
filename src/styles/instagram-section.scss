@@ -62,17 +62,6 @@
 
   }
 
-  @include has-test-shining {
-    right: -30px;
-    top: -30px;
-    background-size: 60%;
-
-    @include tablet {
-      right: -50px;
-      background-size: 100%;
-    }
-  }
-
   .insta-link-section {
     margin-top: 40px;
     display: flex;
@@ -136,7 +125,7 @@
       width: 1420px;
 
       img {
-        width: 320px;
+        width: 340px;
       }
     }
   }

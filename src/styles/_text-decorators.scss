@@ -1,0 +1,88 @@
+.has-text-shining {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    width: 40px;
+    height: 43px;
+    right: -30px;
+    top: -25px;
+    content: ' ';
+    background: url("../images/light-green-text-shining.svg") no-repeat;
+    background-size: 100%;
+
+    @include desktop {
+      width: 57px;
+      height: 62px;
+      right: -40px;
+      top: -30px;
+    }
+
+    @include extra-large-desktop {
+      width: 70px;
+      height: 76px;
+      right: -45px;
+      top: -35px;
+    }
+  }
+}
+
+@mixin has-test-shining() {
+  .has-text-shining:after {
+    @content
+  }
+}
+
+.has-text-underline {
+  position: relative;
+
+  &:before {
+    bottom: -12px;
+    position: absolute;
+    width: 220px;
+    height: 20px;
+    content: ' ';
+    background: url("../images/text-uderline.svg") no-repeat;
+    background-size: 100%;
+  }
+}
+
+@mixin has-text-underline() {
+  .has-text-underline:before {
+    @content
+  }
+}
+
+.mobile-text-shining:after {
+  @include tablet {
+    display: none;
+  }
+}
+
+.tablet-only-text-shining:after {
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.tablet-text-shining:after {
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+  }
+}
+
+.desktop-text-shining:after {
+  display: none;
+
+  @include desktop {
+    display: inline-block;
+  }
+}

@@ -57,17 +57,14 @@
       background-size: cover;
     }
 
+    @include large-desktop {
+      width: 525px !important;
+    }
+
     @include extra-large-desktop {
       width: 725px !important;
     }
   }
-
-  @include has-test-shining {
-    background-size: 80%;
-    top: -30px;
-  }
-
-  @include has-text-underline();
 
   .product-description-list {
     margin-top: 67px;
@@ -83,6 +80,10 @@
       }
 
       @include desktop {
+        width: 395px;
+      }
+
+      @include large-desktop {
         width: 500px;
       }
 
