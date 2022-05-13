@@ -1,12 +1,11 @@
 import '../styles/main.scss';
 
-import {initPriceTabs} from './init-price-tabs';
-import {initHeader} from './init-header';
-import {initForm} from "./init-form";
-
+import {initPricesItem} from './prices';
+import {initHeader} from './header';
+import {initFeedbackForm} from "./feedback-form";
 
 window.addEventListener("load", function () {
-  initPriceTabs();
+  initPricesItem();
   initHeader();
-  initForm();
+  initFeedbackForm();
 });

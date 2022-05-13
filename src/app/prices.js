@@ -8,7 +8,7 @@ function onPriceTabClick() {
   }
 }
 
-export const initPriceTabs = () => {
+export const initPricesItem = () => {
   const tabs = document.getElementsByClassName('price-list__item-compound');
 
   for (let i = 0; i < tabs.length; i++) {

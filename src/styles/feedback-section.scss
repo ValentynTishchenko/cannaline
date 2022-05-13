@@ -1,3 +1,5 @@
+
+
 .feedback-section {
   .section-icon {
     margin: 80px 0 50px;
@@ -40,6 +42,25 @@
   }
 
   .feedback-form {
+    .error-message {
+      font-style: italic;
+      display: none;
+      margin: 0;
+      font-size: 10px;
+      text-align: right;
+      color: $orderButtonColor;
+    }
+
+    .error-field {
+      input, textarea {
+        border: 1px solid $orderButtonColor;
+      }
+
+      .error-message {
+        display: block;
+      }
+    }
+
     @include desktop() {
       margin: 0 auto;
       width: 740px;
@@ -74,6 +95,10 @@
       background: $darkGreyColor;
       border: 0;
       border-radius: 6px;
+
+      &:focus {
+        border: 1px solid $greenColor;
+      }
     }
 
     textarea {
