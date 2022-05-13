@@ -60,4 +60,5 @@ const hideFeedbackModal = () => {
 export const initFeedbackForm = () => {
   document.getElementById('send-feedback-button').addEventListener("click", sendFeedback);
   document.getElementById('feedback-modal-background-wrapper').addEventListener('click', hideFeedbackModal);
+  document.getElementById('close-modal-btn').addEventListener('click', hideFeedbackModal);
 };
